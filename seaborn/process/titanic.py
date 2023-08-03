@@ -20,10 +20,7 @@ def main():
 
 def woman_child_or_man(passenger):
     age, sex = passenger
-    if age < 16:
-        return "child"
-    else:
-        return dict(male="man", female="woman")[sex]
+    return "child" if age < 16 else dict(male="man", female="woman")[sex]
 
 
 if __name__ == "__main__":
